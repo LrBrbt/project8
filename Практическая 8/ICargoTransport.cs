@@ -8,7 +8,7 @@ namespace Практическая_8
 {
     interface ICargoTransport
     {
-        public string ShipName { get; set; }
+        
         public double FullWeight { get; set; }
         public double UnladenWeight { get; set; }
 

@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace Практическая_8
 {
-    class CargoShip : /*IShip*/ ICargoTransport, ICloneable, IComparable
+    class CargoShip : IShip, ICargoTransport, ICloneable, IComparable
     {
         private double _fullWeight;
         private double _unladenWeight;

@@ -40,11 +40,11 @@ namespace Практическая_8
 
             if (ship1.CompareTo(ship2) == -1)
             {
-                MessageBox.Show("Корабли по грузоподъемности не равны и грузоподъемность второго больше");
+                MessageBox.Show($"Грузоподъемность корабля {ship2} больше");
             } 
             else if (ship1.CompareTo(ship2) == 1)
             {
-                MessageBox.Show("Корабли по грузоподъемности не равны и грузоподъемность первого больше");
+                MessageBox.Show($"Грузоподъемность корабля {ship1} больше");
             }
             else
             {
