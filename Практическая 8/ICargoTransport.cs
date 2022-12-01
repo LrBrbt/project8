@@ -14,6 +14,8 @@ namespace Практическая_8
 
         double LoadCapacity();
         int CompareTo(object obj);
-       
+        public object Clone();
+
+
     }
 }

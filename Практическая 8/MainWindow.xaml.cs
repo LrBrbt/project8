@@ -35,8 +35,8 @@ namespace Практическая_8
         private void btnCompare_Click(object sender, RoutedEventArgs e)
         {
 
-            CargoShip ship1 = ListOfShip.SelectedItems[0] as CargoShip;
-            CargoShip ship2 = ListOfShip.SelectedItems[1] as CargoShip;
+            ICargoTransport ship1 = ListOfShip.SelectedItems[0] as ICargoTransport;
+            ICargoTransport ship2 = ListOfShip.SelectedItems[1] as ICargoTransport;
 
             if (ship1.CompareTo(ship2) == -1)
             {
@@ -55,8 +55,8 @@ namespace Практическая_8
 
         private void clone_Click(object sender, RoutedEventArgs e)
         {
-            CargoShip temp = ListOfShip.SelectedItem as CargoShip;
-            CargoShip shipClone = (CargoShip)temp.Clone();
+            ICargoTransport temp = ListOfShip.SelectedItem as ICargoTransport;
+            ICargoTransport shipClone = (ICargoTransport)temp.Clone();
             ListOfShip.Items.Add(shipClone);
             ListOfLoadCapacity.Items.Add(shipClone.LoadCapacity());
 
